@@ -1,4 +1,4 @@
-# MillardSreenivasaMombaur2019
+# MillardSreenivasaMombaur2017
 Contains a predictive simulation of lifting a box with and without the aid of an exo-skeleton
 
 # Description
