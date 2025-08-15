@@ -1,0 +1,1 @@
+time BoxPosX BoxPosZ BoxRotY PelvisPosX PelvisPosZ PelvisRotY RightHipRotY RightKneeRotY RightAnkleRotY MiddleTrunkRotY UpperTrunkRotY HeadRotY RightUpperArmRotY RightLowerArmRotY RightHandRotY

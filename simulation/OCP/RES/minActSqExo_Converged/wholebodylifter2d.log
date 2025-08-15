@@ -1,0 +1,50 @@
+                  ___                
+This is MUSCOD-II (Release 6.0, Revision unknown) |\    /| |    | /   \ 000000        
+Copyright (C) 1995--2011, Simulation and Optimization Group |  \/  | |    | `---.       000     
+ |      |  \__/  \___/          00   
+Interdisciplinary Center for Scientific Computing (IWR)                                  00 
+University of Heidelberg, Germany 00               | |              00
+ 00               | |              00
+ + MS-MINTOC extensions for mixed-integer optimal control  00              ___    ___    ___  
+ + PRSQP Partially Reduced SQP Version [ ]    00           /   \  /   \  |   \ 
+ + Algorithmic Extensions [ CLSQ LSQ ]      000       |      |     | |    |
+         000000  \___/  \___/  |___/ 
+
+
+>>>>  Dimensions of structured NLP problem:
+                   # of discretization points NDIS =        43
+                               # of variables NVAR =      3768
+                    # of equality constraints NEQ  =      2990 (2150 + 840)
+                  # of inequality constraints NIN  =      7760 (224 + 3768*2)
+
+>>>>  Parameters of MSSQP method:
+                final accuracy of NLP solution ACC =  1.00E-05
+                 initial integration tolerance     =  1.00E-08
+  # of homotopy steps in integration tolerance     =         0
+                   final integration tolerance TOL =  1.00E-08
+    regularization factor (as multiple of ACC)     =  0.00E+00
+    Levenberg Marquardt hessian regularization     =  4.00E-01
+                   maximum # of SQP iterations     =         0
+
+ it qpit qpf   kkttol          sobj   |sinf|  |vstep|  |vstpr| |mulstp|       |lgrd|    alpha         merit crit stat
+  0                    1.174904E-01 1.35E-04
+
+****  no convergence  ****
+
+>>>>  Operation counts for ODE solver RKF45S:
+                   total # of function evaluations =     27942
+                      total # of integration steps =      4530
+                         total # of rejected steps =       127
+
+>>>>  Wall time statistics:
+                      Sensitivity generation (IND) = 00:00.000 ( 0.00%) used 6 threads
+                      Integration of inhomogeneity = 00:00.000 ( 0.00%)
+                                 State integration = 00:03.306 (99.86%) used 6 threads
+                              Constraint reduction = 00:00.000 ( 0.00%)
+                                        Condensing = 00:00.000 ( 0.00%)
+                         Solution of condensed QPs = 00:00.000 ( 0.00%)
+                            Remaining calculations = 00:00.005 ( 0.14%)
+                                             Total = 00:03.311
+
+                                   Online graphics = 00:04.006 (54.75%)
+                                       Grand Total = 00:07.317

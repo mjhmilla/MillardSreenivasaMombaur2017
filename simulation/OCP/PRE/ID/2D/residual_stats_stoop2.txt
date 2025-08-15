@@ -1,0 +1,10 @@
+Phase 1
+Mean	Std	Max	Name
+5.3	2.8	13.3	PelvisPosX
+6.7	2.7	13.6	PelvisPosZ
+4.5	1.9	8.1	PelvisRotY
+Phase 2
+Mean	Std	Max	Name
+3.5	3.2	13.9	PelvisPosX
+9.6	3.6	15.9	PelvisPosZ
+1.6	0.9	4.4	PelvisRotY

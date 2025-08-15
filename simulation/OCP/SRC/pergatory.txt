@@ -1,0 +1,45 @@
+//If the box is being picked up
+  //update the position and velocity of the box so that
+  //it matches the hands. This is to ensure that the box-hand
+  //constraint starts on the constraint manifold.
+  if(static_cast<unsigned>(nmos_m1) == 2 && sd && u && p){
+    wholebodylifter.updateState (sd, u, p, CSBothFeetFlat2DBoxAttach);
+
+    Matrix3d E_LH_0 = CalcBodyWorldOrientation(
+                        wholebodylifter.model,
+                        wholebodylifter.q,
+                        wholebodylifter.model.GetBodyId("Hand_L"),
+                        false);
+
+    double theta = atan2(E_LH_0(0,2),E_LH_0(0,0));
+    sd[StateBoxRotY] = theta;
+
+    wholebodylifter.updateState (sd, u, p, CSBothFeetFlat2DBoxAttach);
+
+    Vector3d r_0_LH_0  =
+        wholebodylifter.getPointPosition (PointDistalMetacarpal_L);
+
+    Vector3d r_0_BLH_0  =
+        wholebodylifter.getPointPosition (PointBoxAttach_L);
+
+    Vector3d r_0_B_0  =
+        wholebodylifter.getPointPosition (PointBoxCoM);
+
+    Vector3d r_BLH_LH_0 = r_0_LH_0-r_0_BLH_0;
+
+    sd[StateBoxPosX] = r_0_B_0(0) + r_BLH_LH_0(0);
+    sd[StateBoxPosZ] = r_0_B_0(2) + r_BLH_LH_0(2);
+
+    wholebodylifter.updateState (sd, u, p, CSBothFeetFlat2DBoxAttach);
+
+    r_0_LH_0  =
+            wholebodylifter.getPointPosition (PointDistalMetacarpal_L);
+    r_0_BLH_0  =
+            wholebodylifter.getPointPosition (PointBoxAttach_L);
+    Vector3d errVec = r_0_LH_0 - r_0_BLH_0;
+    double err = sqrt( errVec(0)*errVec(0)
+                     + errVec(1)*errVec(1)
+                     + errVec(2)*errVec(2));
+    printf("DAT Upd: Box-Hand Err: %f: %f %f %f\n",
+           err, errVec(0),errVec(1),errVec(2));
+  }

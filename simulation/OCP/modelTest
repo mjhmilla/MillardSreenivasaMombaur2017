@@ -1,0 +1,1540 @@
+return {
+  configuration = {
+    axis_front = { 1, 0, 0,},
+    axis_right = { 0, -1, 0,},
+    axis_up = { 0, 0, 1,},
+  },
+  constraint_sets = {
+    BothFeetFlat2D = {
+      {
+        normal = { 1, 0, 0,},
+        point = "Heel_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "Heel_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "Toe_R",
+      },
+      {
+        normal = { 1, 0, 0,},
+        point = "BoxCoM",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "BoxCoM",
+      },
+      {
+        normal = { 1, 0, 0,},
+        point = "BoxBottom",
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRX",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRZ",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRY",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRX",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRZ",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRY",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRX",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRZ",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRY",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+    },
+    BothFeetFlat2DBoxAttach = {
+      {
+        normal = { 1, 0, 0,},
+        point = "Heel_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "Heel_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "Toe_R",
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "BoxRX",
+        predecessor_body = "Box",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Hand_R",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.018132, 0, -0.018132,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "BoxRZ",
+        predecessor_body = "Box",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Hand_R",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.018132, 0, -0.018132,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "BoxRY",
+        predecessor_body = "Box",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Hand_R",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.018132, 0, -0.018132,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRX",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRZ",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRY",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRX",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRZ",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRY",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRX",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRZ",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRY",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+    },
+    BothFeetFlat2DTransition = {
+      {
+        normal = { 1, 0, 0,},
+        point = "Heel_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "Heel_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "Toe_R",
+      },
+      {
+        normal = { 1, 0, 0,},
+        point = "DistalMetacarpal_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "DistalMetacarpal_R",
+      },
+      {
+        normal = { 1, 0, 0,},
+        point = "ProximalMetacarpal_R",
+      },
+      {
+        normal = { 1, 0, 0,},
+        point = "BoxCoM",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "BoxCoM",
+      },
+      {
+        normal = { 1, 0, 0,},
+        point = "BoxBottom",
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRX",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRZ",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoThighRY",
+        predecessor_body = "Thigh_R",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, -0.365663,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_Thigh_R_Module",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRX",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRZ",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoPelvisRY",
+        predecessor_body = "Pelvis",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { -0.019272, 0, 0.050797,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_PelvisModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 1, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRX",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 0, 0, 0, 0, 1,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRZ",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+      {
+        axis = { 0, 1, 0, 0, 0, 0,},
+        baumgarte_enabled = false,
+        ctype = "loop",
+        name = "ExoTrunkRY",
+        predecessor_body = "UpperTrunk",
+        predecessor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.028954, 0, 0.116112,},
+        },
+        stabilization_coefficient = 1,
+        successor_body = "Exo6Pt_UpperTrunkModule",
+        successor_transform = {
+          E = {
+            { 1, 0, 0,},
+            { 0, 1, 0,},
+            { 0, 0, 1,},
+          },
+          r = { 0.115631, 0, 0,},
+        },
+      },
+    },
+    HandRightFlat = {
+      {
+        normal = { 1, 0, 0,},
+        point = "ProximalMetacarpal_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "ProximalMetacarpal_R",
+      },
+      {
+        normal = { 1, 0, 0,},
+        point = "DistalMetacarpal_R",
+      },
+      {
+        normal = { 0, 0, 1,},
+        point = "DistalMetacarpal_R",
+      },
+    },
+  },
+  frames = {
+    {
+      body = {
+        com = { -0.067, 0, 0,},
+        inertia = {
+          { 0.1, 0, 0,},
+          { 0, 0.105, 0,},
+          { 0, 0, 0.135,},
+        },
+        mass = 3.5,
+      },
+      joint = {
+        { 0, 0, 0, 1, 0, 0,},
+        { 0, 0, 0, 0, 0, 1,},
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { -0.019272, 0, 0.050797,},
+      },
+      name = "Exo6Pt_PelvisModule",
+      parent = "ROOT",
+      points = {
+        Exo6Pt_VuaPelvis_R = {
+          color = { 0.1, 0.1, 0.1,},
+          coordinates = { 0, 0, 0,},
+        },
+        Exo6Pt_VuaTrunk = {
+          color = { 0.1, 0.1, 0.1,},
+          coordinates = { -0.115631, 0, 0.031748,},
+        },
+      },
+      visuals = {
+        {
+          color = { 0.5, 0.5, 1,},
+          dimensions = { 0.3, 0.075, 0.12,},
+          mesh_center = { 0, 0, 0.02,},
+          src = "meshes/exoPelvisModuleWithMotors.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, -0.312345,},
+        inertia = {
+          { 0.0104215329, 0, 0,},
+          { 0, 0.0104215329, 0,},
+          { 0, 0, 0.0001117991,},
+        },
+        mass = 0.4978796037,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, 0,},
+      },
+      name = "Exo6Pt_Thigh_R_Bar",
+      parent = "Exo6Pt_PelvisModule",
+      points = {},
+      visuals = {
+        {
+          color = { 0.5, 0.5, 1,},
+          dimensions = { 0.03, 0.03, 0.45,},
+          mesh_center = { 0, -0.01, -0.225,},
+          src = "meshes/exo6pt_bar.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0.028908, 0, 0,},
+        inertia = {
+          { 0.0040377965, 0, 0,},
+          { 0, 0.0040377965, 0,},
+          { 0, 0, 0.0070273713,},
+        },
+        mass = 0.704144011,
+      },
+      joint = {
+        { 0, 0, 0, 0, 0, 1,},
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, -0.41646,},
+      },
+      name = "Exo6Pt_Thigh_R_Module",
+      parent = "Exo6Pt_Thigh_R_Bar",
+      points = {
+        Exo6Pt_Thigh_R = {
+          color = { 0.1, 0.1, 0.1,},
+          coordinates = { 0, 0, 0,},
+        },
+      },
+      visuals = {
+        {
+          color = { 0.5, 0.5, 1,},
+          dimensions = { 0.21199, 0.02, 0.067714,},
+          mesh_center = { 0.028908, -0.01, 0,},
+          src = "meshes/exo6pt_thighModule.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, 0.212834,},
+        inertia = {
+          { 0.0052107664, 0, 0,},
+          { 0, 0.0052107664, 0,},
+          { 0, 0, 5.5899544532922e-05,},
+        },
+        mass = 0.2489398019,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { -0.115631, 0, 0.031748,},
+      },
+      name = "Exo6Pt_Torso_Bar",
+      parent = "Exo6Pt_PelvisModule",
+      points = {},
+      visuals = {
+        {
+          color = { 0.5, 0.5, 1,},
+          dimensions = { 0.03, 0.03, 0.35,},
+          mesh_center = { 0, 0, 0.175,},
+          src = "meshes/exo6pt_bar.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0.096513, 0, 0.087673,},
+        inertia = {
+          { 0.02, 0, 0,},
+          { 0, 0.02, 0,},
+          { 0, 0, 0.01,},
+        },
+        mass = 0.5,
+      },
+      joint = {
+        { 0, 0, 0, 0, 0, 1,},
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, 0.283779,},
+      },
+      name = "Exo6Pt_UpperTrunkModule",
+      parent = "Exo6Pt_Torso_Bar",
+      points = {
+        Exo6Pt_VuaUpperTrunk_R = {
+          color = { 0.1, 0.1, 0.1,},
+          coordinates = { 0.115631, 0, 0,},
+        },
+      },
+      visuals = {
+        {
+          color = { 0.5, 0.5, 1,},
+          dimensions = { 0.231262, 0.02, 0.232224,},
+          mesh_center = { 0.096513, 0, 0.087084,},
+          src = "meshes/exo6pt_upperTrunkModule.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, 0,},
+        inertia = {
+          { 0.234375, 0, 0,},
+          { 0, 0.234375, 0,},
+          { 0, 0, 0.234375,},
+        },
+        mass = 15,
+      },
+      joint = {
+        { 0, 0, 0, 1, 0, 0,},
+        { 0, 0, 0, 0, 0, 1,},
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, 0,},
+      },
+      name = "Box",
+      parent = "ROOT",
+      visuals = {
+        {
+          color = { 0.45, 0.32, 0.18,},
+          dimensions = { 0.25, 0.01, 0.35,},
+          mesh_center = { 0, 0, 0.05,},
+          src = "meshes/unit_cube.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { -0.049163, 0, 0.056939,},
+        inertia = {
+          { 0.057213, 0, 0,},
+          { 0, 0.04682, 0,},
+          { 0, 0, 0.060991,},
+        },
+        mass = 8.18806,
+      },
+      joint = {
+        { 0, 0, 0, 1, 0, 0,},
+        { 0, 0, 0, 0, 0, 1,},
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, 0,},
+      },
+      markers = {
+        LASI = { 0.047794, 0, 0.070908,},
+        LPSI = { -0.106106, 0, 0.070908,},
+        RASI = { 0.047794, 0, 0.070908,},
+        RPSI = { -0.106106, 0, 0.070908,},
+      },
+      name = "Pelvis",
+      parent = "ROOT",
+      visuals = {
+        {
+          color = { 0.2, 0.7, 0.3,},
+          dimensions = { 0.192719, 0.01, 0.126993,},
+          mesh_center = { -0.013738, 0, 0.035454,},
+          src = "meshes/pelvis.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, -0.184859,},
+        inertia = {
+          { 0.635668, 0, 0,},
+          { 0, 0.635668, 0,},
+          { 0, 0, 0.160732,},
+        },
+        mass = 28.603946,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, 0,},
+      },
+      markers = {
+        RKNE = { -0.011611, 0, -0.454494,},
+        RTHI = { -0.007376, 0, -0.243721,},
+      },
+      name = "Thigh_R",
+      parent = "Pelvis",
+      visuals = {
+        {
+          color = { 0.75, 0.25, 0.25,},
+          dimensions = { 0.183738, 0.01, 0.451425,},
+          mesh_center = { 0, -0.01, -0.225712,},
+          src = "meshes/thigh.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, -0.178089,},
+        inertia = {
+          { 0.059654, 0, 0,},
+          { 0, 0.057408, 0,},
+          { 0, 0, 0.009154,},
+        },
+        mass = 4.756082,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, -0.451425,},
+      },
+      markers = {
+        RANK = { -0.019042, 0, -0.424458,},
+        RTIB = { -0.014044, 0, -0.142309,},
+      },
+      name = "Shank_R",
+      parent = "Thigh_R",
+      visuals = {
+        {
+          color = { 0.75, 0.25, 0.25,},
+          dimensions = { 0.119343, 0.01, 0.405208,},
+          mesh_center = { 0, -0.01, -0.202604,},
+          src = "meshes/shank.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0.051769, 0, -0.088557,},
+        inertia = {
+          { 0.00554, 0, 0,},
+          { 0, 0.0229, 0,},
+          { 0, 0, 0.020802,},
+        },
+        mass = 3.381664,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, -0.405208,},
+      },
+      markers = {
+        RHEE = { -0.090656, 0, -0.087981,},
+        RTOE = { 0.207603, 0, -0.087981,},
+      },
+      name = "Foot_R",
+      parent = "Shank_R",
+      visuals = {
+        {
+          color = { 0.75, 0.25, 0.25,},
+          dimensions = { 0.293406, 0.01, 0.09933,},
+          mesh_center = { 0.068517, -0.01, -0.049665,},
+          src = "meshes/foot.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0.025006, 0, 0.120534,},
+        inertia = {
+          { 0.073301, 0, 0,},
+          { 0, 0.044726, 0,},
+          { 0, 0, 0.129894,},
+        },
+        mass = 11.214196,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { -0.029122, 0, 0.097331,},
+      },
+      markers = {},
+      name = "MiddleTrunk",
+      parent = "Pelvis",
+      visuals = {
+        {
+          color = { 0.2, 0.7, 0.3,},
+          dimensions = { 0.203443, 0.01, 0.149091,},
+          mesh_center = { 0.002402, 0, 0.077956,},
+          src = "meshes/middleTrunk.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { -0.008105, 0, 0.168035,},
+        inertia = {
+          { 0.145743, 0, 0,},
+          { 0, 0.062423, 0,},
+          { 0, 0, 0.165279,},
+        },
+        mass = 12.24289,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { -0.019094, 0, 0.152881,},
+      },
+      markers = {
+        C7 = { -0.047167, 0, 0.286328,},
+        CLAV = { 0.068965, 0, 0.224382,},
+        LSHO = { -0.002042, 0, 0.219427,},
+        RBAK = { -0.092841, 0, 0.098077,},
+        RSHO = { 0.00154, 0, 0.213646,},
+        STRN = { 0.121634, 0, 0.052808,},
+        T10 = { -0.077616, 0, 0.035326,},
+      },
+      name = "UpperTrunk",
+      parent = "MiddleTrunk",
+      visuals = {
+        {
+          color = { 0.2, 0.7, 0.3,},
+          dimensions = { 0.193027, 0.01, 0.29028,},
+          mesh_center = { 0.013342, 0, 0.116112,},
+          src = "meshes/upperTrunk.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0.042828, 0, 0.107427,},
+        inertia = {
+          { 0.028272, 0, 0,},
+          { 0, 0.030552, 0,},
+          { 0, 0, 0.019875,},
+        },
+        mass = 4.893817,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0.00519, 0, 0.286336,},
+      },
+      markers = {
+        LBHD = { -0.032306, 0, 0.174188,},
+        LFHD = { 0.11641, 0, 0.174188,},
+        RBHD = { -0.032306, 0, 0.174188,},
+        RFHD = { 0.11641, 0, 0.174188,},
+      },
+      name = "Head",
+      parent = "UpperTrunk",
+      visuals = {
+        {
+          color = { 0.2, 0.7, 0.3,},
+          dimensions = { 0.191206, 0.01, 0.212451,},
+          mesh_center = { 0.043978, 0, 0.133254,},
+          src = "meshes/head.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, -0.165073,},
+        inertia = {
+          { 0.034068, 0, 0,},
+          { 0, 0.030602, 0,},
+          { 0, 0, 0.012128,},
+        },
+        mass = 5.092742,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0.002137, 0, 0.182111,},
+      },
+      markers = {
+        RELB = { 0.010577, 0, -0.290119,},
+        RUPA = { 0.003068, 0, -0.198742,},
+      },
+      name = "UpperArm_R",
+      parent = "UpperTrunk",
+      visuals = {
+        {
+          color = { 0.75, 0.25, 0.25,},
+          dimensions = { 0.108542, 0.01, 0.320615,},
+          mesh_center = { 0, -0.05, -0.128246,},
+          src = "meshes/upperArm.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, -0.11717,},
+        inertia = {
+          { 0.009318, 0, 0,},
+          { 0, 0.010006, 0,},
+          { 0, 0, 0.002934,},
+        },
+        mass = 2.31039,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, -0.285989,},
+      },
+      markers = {
+        RWRA = { 0.020764, 0, -0.261224,},
+        RWRB = { -0.035644, 0, -0.267588,},
+      },
+      name = "LowerArm_R",
+      parent = "UpperArm_R",
+      visuals = {
+        {
+          color = { 0.75, 0.25, 0.25,},
+          dimensions = { -0.063461, 0.01, 0.256165,},
+          mesh_center = { 0, -0.05, -0.128082,},
+          src = "meshes/lowerArm.obj",
+        },
+      },
+    },
+    {
+      body = {
+        com = { 0, 0, -0.066417,},
+        inertia = {
+          { 0.002002, 0, 0,},
+          { 0, 0.00274, 0,},
+          { 0, 0, 0.0011,},
+        },
+        mass = 0.993342,
+      },
+      joint = {
+        { 0, 1, 0, 0, 0, 0,},
+      },
+      joint_frame = {
+        E = {
+          { 1, 0, 0,},
+          { 0, 1, 0,},
+          { 0, 0, 1,},
+        },
+        r = { 0, 0, -0.256165,},
+      },
+      markers = {
+        RFIN = { 0.026973, 0, -0.083431,},
+      },
+      name = "Hand_R",
+      parent = "LowerArm_R",
+      visuals = {
+        {
+          color = { 0.75, 0.25, 0.25,},
+          dimensions = { -0.131799, 0.01, 0.199964,},
+          mesh_center = { 0, -0.05, -0.099982,},
+          src = "meshes/hand.obj",
+        },
+      },
+    },
+  },
+  gravity = { 0, 0, -9.81,},
+  metadata = {
+    {
+      scaling_used = "Vua2UHEI",
+      subject_age = 35,
+      subject_gender = 0,
+      subject_height = 1.73,
+      subject_hipCenterWidth = 0.1702,
+      subject_pelvisWidth = 0.2364,
+      subject_weight = 81.68,
+    },
+  },
+  points = {
+    {
+      body = "Exo6Pt_PelvisModule",
+      name = "Exo6Pt_VuaPelvis_R",
+      point = { 0, 0, 0,},
+    },
+    {
+      body = "Exo6Pt_Thigh_R_Module",
+      name = "Exo6Pt_Thigh_R",
+      point = { 0, 0, 0,},
+    },
+    {
+      body = "Exo6Pt_UpperTrunkModule",
+      name = "Exo6Pt_VuaUpperTrunk_R",
+      point = { 0.115631, 0, 0,},
+    },
+    {
+      body = "Pelvis",
+      name = "VuaPelvis_R",
+      point = { -0.019272, 0, 0.050797,},
+    },
+    {
+      body = "Thigh_R",
+      name = "VuaThigh_R",
+      point = { -0.019272, 0, -0.365663,},
+    },
+    {
+      body = "UpperTrunk",
+      name = "VuaUpperTrunk_R",
+      point = { 0.02895399928093, 0, 0.11611200124025,},
+    },
+    {
+      body = "Foot_R",
+      name = "Heel_R",
+      point = { -0.074466, 0, -0.098153,},
+    },
+    {
+      body = "Foot_R",
+      name = "Toe_R",
+      point = { 0.12, 0, -0.101341,},
+    },
+    {
+      body = "Hand_R",
+      name = "ProximalMetacarpal_R",
+      point = { 0, 0, -0.02,},
+    },
+    {
+      body = "Hand_R",
+      name = "DistalMetacarpal_R",
+      point = { 0.027, 0, -0.079,},
+    },
+    {
+      body = "Box",
+      name = "BoxAttach_R",
+      point = { 0, 0, 0.147,},
+    },
+    {
+      body = "Box",
+      name = "BoxCoM",
+      point = { 0, 0, 0,},
+    },
+    {
+      body = "Box",
+      name = "BoxBottom",
+      point = { 0, 0, -0.125,},
+    },
+    {
+      body = "Box",
+      name = "BoxTop",
+      point = { 0, 0, 0.225,},
+    },
+    {
+      body = "Box",
+      name = "BoxBottomLeft",
+      point = { -0.125, 0, -0.125,},
+    },
+    {
+      body = "Box",
+      name = "BoxBottomRight",
+      point = { 0.125, 0, -0.125,},
+    },
+  },
+}
